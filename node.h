@@ -3,14 +3,15 @@
 
 //Node for the class 
 class node{
-  friend class snake;
+	friend class map;
 
 	private:
 		node* next;
-		int data;
+		SDL_Rect body;
+
 	public:
-		node() : next(NULL), data(1) {}
-		node(int d) : next(NULL), data(d) {}
+		node() : next(NULL) {body.h = 15, body.w = 15,
+							 body.x = 390, body.y = 290;}
 };
 
 #endif NODE_H_
