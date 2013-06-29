@@ -1,13 +1,17 @@
 #include "SDL.h"
 #include "snake.h"
 
+#include "snake.h"
+#include "SDL.h"
 #ifndef MAP_H_
 #define MAP_H_
+
+
 
 //This class creates the map of which the game will be played on.
 class map{
 
-  private:
+	private:
 		SDL_Surface *screen;
 		SDL_Event occur;
 		SDL_Rect FirstBlock;
@@ -16,8 +20,9 @@ class map{
 	public:
 		map();
 		void run();
+		void playerMov();
 		void loadScreen();
-		void drawScreen();
+		void drawBody();
 
 };
 
