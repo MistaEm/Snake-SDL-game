@@ -1,28 +1,20 @@
 #include "SDL.h"
+#include "SDL_ttf.h"
 #include "snake.h"
+#include <iostream>
 using namespace std;
 
 snake::snake()
-:head(), tail()
+:head(new node), tail()
 {}
 
 
 void push_back()
 {
-
+  
 }
 
 void pop_back()
-{
-
-}
-
-void move_snake()
-{
-
-}
-
-void draw_snake()
 {
 
 }
